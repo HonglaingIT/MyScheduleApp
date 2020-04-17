@@ -22,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void onClickEdit (View view){
+
+
+        Intent intent = new Intent( this, EditTaskActivity.class);
+        startActivity(intent);
+    }
+
 
 
 
