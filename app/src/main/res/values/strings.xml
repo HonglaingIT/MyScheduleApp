@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyScheduleApp</string>
+    <string name="task">Task</string>
+    <string name="addtask">Add Task</string>
+    <string name="edittask">Edit Task</string>
+    <string name="addbutton">Add</string>
+    <string name="editbutton">Edit</string>
+
+    <string name="description">Description</string>
+    <string name="deadline">Deadline</string>
+
 </resources>

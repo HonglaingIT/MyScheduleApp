@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyScheduleApp</string>
+    <string name="task">ការងារ</string>
+    <string name="addtask">បន្ថែមការងារ</string>
+    <string name="editbutton">កែសម្រួល</string>
+    <string name="addbutton">បន្ថែម</string>
+    <string name="edittask">កែសម្រួលការងារ</string>
+
+    <string name="description">បរិយាយ</string>
+    <string name="deadline">ថ្ងៃកំណត់</string>
+
+
+
+
+</resources>

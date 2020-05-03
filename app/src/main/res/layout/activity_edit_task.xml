@@ -15,7 +15,8 @@
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="80sp"
-            android:text="Edit Task"
+            android:background="@color/Background"
+            android:text="@string/edittask"
             android:textSize="24sp" />
 
         <LinearLayout
@@ -29,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Task" />
+                android:text="@string/task" />
 
             <EditText
                 android:id="@+id/editText4"
@@ -51,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Description" />
+                android:text="@string/description" />
 
             <EditText
                 android:id="@+id/editText5"
@@ -73,7 +74,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Deadline" />
+                android:text="@string/deadline" />
 
             <EditText
                 android:id="@+id/editText6"
@@ -88,7 +89,7 @@
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add" />
+            android:text="@string/addbutton" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
