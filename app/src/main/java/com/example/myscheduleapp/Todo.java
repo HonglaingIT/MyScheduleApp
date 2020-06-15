@@ -2,10 +2,13 @@ package com.example.myscheduleapp;
 
 public class Todo {
 
+
     private String title;
     private String description;
     private String deadline;
     private long time;
+
+
 
     public String getTitle() {
         return title;
