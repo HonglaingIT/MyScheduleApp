@@ -59,40 +59,19 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private void loadTodos(){
-        // Temporary data
-//        Todo todo1 = new Todo();
-//        todo1.setTitle("CS HW");
-//        todo1.setDescription("Android");
-//        todo1.setDeadline("11/6/2020");
-//
-//        Todo todo2 = new Todo();
-//        todo2.setTitle("BUS HW");
-//        todo2.setDescription("Entrepreneurship");
-//        todo2.setDeadline("23/6/2020");
-//
-//        Todo todo3 = new Todo();
-//        todo3.setTitle("MIS HCI HW");
-//        todo3.setDescription("HCI");
-//        todo3.setDeadline("12/6/2020");
-//
-//        Todo todo4 = new Todo();
-//        todo4.setTitle("CS 360 HW");
-//        todo4.setDescription("Java");
-//        todo4.setDeadline("15/6/2020");
-//
-//        return new Todo[]{todo1, todo2, todo3, todo4};
+    private void loadTodos() {
+
         // Show loading
         showLoading(true);
 
-        // Load email from the server using Volley library
-        String url = "http://10.0.2.2/example/mails.php";
+        // Load todo from the server using Volley library
+        String url = "http://192.168.123.14:8888/todos.php";
 
         // Create a request
         StringRequest request = new StringRequest(url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                // Convert json string to array of Email using Gson
+                // Convert json string to array ofTodo using Gson
                 Gson gson = new Gson();
                 Todo[] todos = gson.fromJson(response, Todo[].class);
                 // Create and set an adapter
@@ -106,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(MainActivity.this, "Something error while loading data from the server", Toast.LENGTH_LONG).show();
-                Log.d("piuecom", "Load data error: " + error.getMessage());
+                Log.d("myscheduleapp", "Load data error: " + error.getMessage());
                 // Hide the progress bar and show recycler view
                 showLoading(false);
             }
