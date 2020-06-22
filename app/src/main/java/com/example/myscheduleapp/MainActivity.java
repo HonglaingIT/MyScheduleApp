@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         showLoading(true);
 
         // Load todo from the server using Volley library
-        String url = "http://192.168.123.14:8888/todos.php";
+        String url = "http://10.0.2.2:8888/todos.php";
 
         // Create a request
         StringRequest request = new StringRequest(url, new Response.Listener<String>() {
