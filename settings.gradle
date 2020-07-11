@@ -1,2 +1,3 @@
-rootProject.name='MyScheduleApp'
 include ':app'
+rootProject.name='MyScheduleApp'
+

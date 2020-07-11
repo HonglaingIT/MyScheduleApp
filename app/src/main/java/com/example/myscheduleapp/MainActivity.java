@@ -1,5 +1,6 @@
 package com.example.myscheduleapp;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -39,22 +41,18 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // Create and set an adapter
-//        Todo[] todos = loadTodos();
+        //
 //        TodosAdapter adapter = new TodosAdapter(todos);
 //        recyclerView.setAdapter(adapter);
         loadTodos();
     }
 
     public void onClickButton (View view){
-
-
         Intent intent = new Intent( this, AddTaskActivity.class);
         startActivity(intent);
     }
 
     public void onClickEdit (View view){
-
-
         Intent intent = new Intent( this, EditTaskActivity.class);
         startActivity(intent);
     }
@@ -64,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
         // Show loading
         showLoading(true);
 
-        // Load todo from the server using Volley library
+        //Loadtodo from the server using Volley library
         String url = "http://10.0.2.2:8888/todos.php";
 
         // Create a request
