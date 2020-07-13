@@ -32,14 +32,15 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_weight="3"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
                 android:text="@string/task" android:padding="10dp"/>
 
             <EditText
                 android:id="@+id/editText4"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
@@ -53,16 +54,17 @@
             android:orientation="horizontal">
 
             <TextView
+                android:gravity="center"
                 android:id="@+id/textView9"
-                android:layout_width="wrap_content"
+                android:layout_weight="3"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
                 android:text="@string/description"
                 android:padding="10dp"/>
 
             <EditText
                 android:id="@+id/editText5"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
@@ -77,15 +79,16 @@
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:gravity="center"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_width="match_parent"
                 android:text="@string/deadline"
                 android:padding="10dp"/>
 
             <EditText
                 android:id="@+id/editText6"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
@@ -95,10 +98,12 @@
         <Button
             android:id="@+id/button3"
             android:onClick="onClickEdit"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/editbutton"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
