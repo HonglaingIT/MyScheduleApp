@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ProgressBar progressBar;
     private RecyclerView recyclerView;
+    TextView title, des, date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,8 +54,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClickEdit (View view){
+    public void onClickEdit( View view){
         Intent intent = new Intent( this, EditTaskActivity.class);
+        title = view.findViewById(R.id.txt_title);
+        des = view.findViewById(R.id.txt_des);
+        date = view.findViewById(R.id.txt_deadline);
+
+        intent.putExtra("task", title.getText().toString());
+        intent.putExtra("des", des.getText().toString());
+        intent.putExtra("date", date.getText().toString());
         startActivity(intent);
     }
 
@@ -62,14 +71,13 @@ public class MainActivity extends AppCompatActivity {
         // Show loading
         showLoading(true);
 
-        //Loadtodo from the server using Volley library
-        String url = "http://10.0.2.2:8888/todos.php";
+        String url = "https://my.api.mockaroo.com/testinggggggg.json?key=5df54bd0";
 
         // Create a request
         StringRequest request = new StringRequest(url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                // Convert json string to array ofTodo using Gson
+                // Convert json string to array of Email using Gson
                 Gson gson = new Gson();
                 Todo[] todos = gson.fromJson(response, Todo[].class);
                 // Create and set an adapter
@@ -83,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Toast.makeText(MainActivity.this, "Something error while loading data from the server", Toast.LENGTH_LONG).show();
-                Log.d("myscheduleapp", "Load data error: " + error.getMessage());
+                Log.d("piuecom", "Load data error: " + error.getMessage());
                 // Hide the progress bar and show recycler view
                 showLoading(false);
             }
@@ -93,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
         Volley.newRequestQueue(this).add(request);
 
     }
+
 
     private void showLoading(boolean state){
         if(state){

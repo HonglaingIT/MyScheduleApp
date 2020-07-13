@@ -29,19 +29,21 @@
             android:layout_width="wrap_content"
             android:layout_height="70dp"
             android:text="TO-DO"
+
             android:textSize="36sp"
+           android:textStyle="bold"
             android:layout_marginRight="200dp"
+           android:layout_gravity="center"
             />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
+            android:gravity="center_horizontal"
             android:onClick="onClickButton"
-            android:text="@string/addbutton" />
+            android:text="@string/addbutton"
+            android:layout_gravity="center|right" />
 
     </LinearLayout>
         <FrameLayout

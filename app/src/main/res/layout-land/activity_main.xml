@@ -36,8 +36,10 @@
                 android:layout_height="70dp"
                 android:text="TO-DO"
                 android:textSize="36sp"
+                android:textStyle="bold"
                 android:layout_marginRight="450dp"
                 android:gravity="center"
+                android:layout_marginTop="15dp"
                 />
 
             <Button

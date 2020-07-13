@@ -17,8 +17,10 @@ public class AddTaskActivity extends AppCompatActivity {
     }
 
     public void onClickAdd (View view){
-        Intent intent   = new Intent(this, MainActivity.class);
-        startActivity(intent);
+//        Intent intent   = new Intent(this, MainActivity.class);
+//        startActivity(intent);
+
+        this.finish();
     }
 
 
