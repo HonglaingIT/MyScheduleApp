@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "152225398555",
+    "firebase_url": "https://android-4d36b.firebaseio.com",
+    "project_id": "android-4d36b",
+    "storage_bucket": "android-4d36b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152225398555:android:90c2ffc3e0d33984b59dbe",
+        "android_client_info": {
+          "package_name": "com.example.myscheduleapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152225398555-fj6pul84of3kfd0885kio88a27qqlqrb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myscheduleapp",
+            "certificate_hash": "4e26f1c52890b5c10ffbad35220baa15cd436d83"
+          }
+        },
+        {
+          "client_id": "152225398555-e0en0lb1o0tcjph7rhjt1p4er3vuk7sb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIevDVlPnIWizKOkv3AXfPdVFn4vU_f-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152225398555-e0en0lb1o0tcjph7rhjt1p4er3vuk7sb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

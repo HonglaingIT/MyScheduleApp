@@ -1,44 +1,38 @@
 package com.example.myscheduleapp;
 
+import android.widget.EditText;
+
 public class Todo {
 
+     String todoID;
+   String title;
+ String description;
+ String deadline;
 
-    private String title;
-    private String description;
-    private String deadline;
-    private long time;
+    public Todo(){
+    }
 
 
+    public Todo (String id, String title, String description, String date){
+        this.todoID = id;
+        this.title = title;
+        this.description = description;
+        this.deadline = date;
+    }
+
+    public String getTodoID() {
+        return todoID;
+    }
 
     public String getTitle() {
         return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public String getDeadline() {
         return deadline;
-    }
-
-    public void setDeadline(String deadline) {
-        this.deadline = deadline;
-    }
-
-    public long getTime() {
-        return time;
-    }
-
-    public void setTime(long time) {
-        this.time = time;
     }
 }

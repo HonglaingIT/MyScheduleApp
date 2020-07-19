@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_gray">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/main">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/piu_logo"
+            android:layout_width="120dp"
+
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/img_piu_logo" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main" />
+
+        <RelativeLayout
+            android:id="@+id/register"
+            android:layout_width="360dp"
+            android:layout_height="400dp"
+            android:layout_below="@+id/piu_logo"
+            android:layout_centerInParent="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/register1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:text="Register"
+                android:textColor="@color/main1"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/emailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/register1"
+                android:layout_marginLeft="16dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="16dp"
+                android:hint="Email "
+                android:textColor="@color/gray" />
+
+            <EditText
+                android:id="@+id/passRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailRegister"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:inputType="textPassword"
+                android:hint="Password" />
+
+            <Button
+                android:id="@+id/button"
+
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/passRegister"
+                android:layout_centerHorizontal="true"
+                android:background="#2b348f"
+                android:onClick="onRegisterClick"
+                android:text="Register"
+                android:textColor="#fff" />
+
+            <TextView
+                android:id="@+id/loginHere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:onClick="onClickLoginHere"
+                android:text="Already have an acoount? Log In here"
+                android:textColor="#3D5AFE" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

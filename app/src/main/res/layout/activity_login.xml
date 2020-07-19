@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back_gray">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/Background">
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/piu_logo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:src="@drawable/ic_logo"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/login"
+            android:layout_width="360dp"
+            android:layout_height="450dp"
+            android:layout_below="@+id/piu_logo"
+            android:layout_centerInParent="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/login1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="50dp"
+
+                android:text="LOG IN"
+                android:textColor="@color/Background"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/login1"
+                android:layout_marginLeft="16dp"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Email "
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="20dp"
+
+                android:hint="Password"
+                android:textColor="#000000"/>
+
+            <Button
+                android:onClick="onLoginClick"
+
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/pass"
+                android:layout_centerHorizontal="true"
+                android:background="@color/Background"
+                android:text="Login"
+                android:textColor="#fff" />
+
+            <TextView
+                android:onClick="onClickRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20sp"
+                android:text="Haven't got an account yet? Register here"
+                android:textColor="#3D5AFE" />
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

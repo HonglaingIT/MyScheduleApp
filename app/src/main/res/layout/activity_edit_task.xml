@@ -15,7 +15,7 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="80sp"
+            android:layout_height="?attr/actionBarSize"
             android:background="@color/Background"
             android:text="@string/edittask"
             android:textSize="24sp"
@@ -27,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10sp"
+            android:layout_marginTop="20sp"
             android:orientation="horizontal"
             >
 
@@ -94,7 +95,24 @@
                 android:ems="10"
                 android:inputType="datetime" />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@android:dimen/app_icon_size"
+            >
+            <Button
+            android:id="@+id/button9"
+            android:onClick="onClickDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deletebutton"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+                android:layout_marginRight="@android:dimen/app_icon_size"
 
+                />
         <Button
             android:id="@+id/button3"
             android:onClick="onClickEdit"
@@ -104,6 +122,8 @@
             android:textStyle="bold"
             android:layout_gravity="center"
             />
+
+        </LinearLayout>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
